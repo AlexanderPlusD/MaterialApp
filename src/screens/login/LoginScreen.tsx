@@ -24,7 +24,7 @@ const theme = {
     text: BRAND_COLORS.TEXT_DARK,
     placeholder: '#A1A1A1',
   },
-  roundness: 12,
+  roundness: 6,
 }
 
 export const LoginScreen = () => {
@@ -37,7 +37,6 @@ export const LoginScreen = () => {
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
       >
-        {/* Logo y Título */}
         <View style={styles.header}>
           <Image source={Logo} style={styles.logo} resizeMode='contain'/>
           <Text variant="headlineLarge" style={styles.title}>
@@ -48,7 +47,6 @@ export const LoginScreen = () => {
           </Text>
         </View>
 
-        {/* Formulario de Login */}
         <View style={styles.formContainer}>
           <TextInput
             mode="outlined"
@@ -159,7 +157,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   button: {
-    borderRadius: 12,
+    borderRadius: 6,
     elevation: 2,
   },
   buttonContent: {
@@ -186,7 +184,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   outlineButton: {
-    borderRadius: 12,
+    borderRadius: 6,
     borderColor: BRAND_COLORS.GREEN,
     borderWidth: 1.5,
   },
